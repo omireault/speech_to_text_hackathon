@@ -6,7 +6,7 @@ const app = express();
 
 app.get('/', function(req, res){
     console.log('GET /');
-    var html = fs.readFileSync('audio2.html');
+    var html = fs.readFileSync('index.html');
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.end(html);
 });
